@@ -2,7 +2,7 @@
 string[] str = new string[] {"hello", "2", "world", ":-)"};
 string[] result = new string[str.Length];
 
-void Arraytransform(string[]str, string[]result);
+void ArrayTransform(string[] str, string[] result)
 {
     int count = 0;
     for (int i = 0; i < str.Length; i++)
@@ -19,7 +19,9 @@ void PrintArray(string[] str)
 {
     for (int i = 0; i < str.Length; i++)
     {
-        Console.Write(str[i]);
+        Console.Write($"{str[i]} ");
     }
     Console.WriteLine();
 }
+ArrayTransform(str, result);
+PrintArray(result);
