@@ -9,8 +9,17 @@ void Arraytransform(string[]str, string[]result);
     {
         if (str[i].Length <= 3)
         {
-    }
+    
     result[count] = str[i];
     count++;
+        }
+    }
 }
+void PrintArray(string[] str)
+{
+    for (int i = 0; i < str.Length; i++)
+    {
+        Console.Write(str[i]);
+    }
+    Console.WriteLine();
 }
